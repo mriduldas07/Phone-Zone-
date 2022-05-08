@@ -3,7 +3,8 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../firebase.init';
-import './Login.css'
+import LodingCompo from '../LodingCompo/LodingCompo';
+import './Login.css';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -26,7 +27,9 @@ const Login = () => {
     let from = location?.state?.from?.pathname || "/";
 
 
-    
+    if (loading || sending) {
+        return <LodingCompo></LodingCompo>
+    }
 
 
     const handleEmailBlur = e =>{
@@ -64,7 +67,9 @@ const Login = () => {
                 <input onBlur={handlePasswordBlur} type="password" name="password" placeholder='Password...' id="" required/>
                 <br />
                 <p style={{color: 'red'}}>{error?.message}</p>
-                
+                {
+                    loading && <LodingCompo></LodingCompo>
+                }
                 <p>New to phoneZone?<span className='text-warning' style={{cursor: 'pointer', fontWeight: 700}} onClick={navigateToRegister}> Create an account</span></p>
                 <input type="submit" value="Login" />
                 <br />

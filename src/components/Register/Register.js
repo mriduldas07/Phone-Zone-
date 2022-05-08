@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../firebase.init';
+import LodingCompo from '../LodingCompo/LodingCompo';
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -18,7 +21,9 @@ const Register = () => {
             updating,
         ] = useUpdateProfile(auth);
 
-        
+        if(updating){
+            return <LodingCompo></LodingCompo>
+        }
 
         const handleEmailBlur = e =>{
             setEmail(e.target.value);
@@ -61,7 +66,7 @@ const Register = () => {
                 <input type="submit" value="Register" />
             </form>
             <br />
-            
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
