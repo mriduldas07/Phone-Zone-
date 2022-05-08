@@ -1,0 +1,9 @@
+.blogs{
+    background-color: azure;
+    width: 60%;
+    padding: 40px;
+    margin: auto;
+    margin-top: 5%;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
