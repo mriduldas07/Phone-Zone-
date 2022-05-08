@@ -7,7 +7,7 @@ const InventoryItems = () => {
     const [items, setItems] = useState([]);
 
     useEffect( () =>{
-        fetch("fackdata.json")
+        fetch("http://localhost:5000/phones")
         .then(res => res.json())
         .then(data => setItems(data))
     },[])
@@ -17,7 +17,7 @@ const InventoryItems = () => {
                 <Row>
                     {
                         items.slice(0,6).map(item => <ItemDetails
-                        key={item.id}
+                        key={item._id}
                         item = {item}
                         ></ItemDetails>)
                     }
