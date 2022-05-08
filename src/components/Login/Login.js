@@ -5,6 +5,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../firebase.init';
 import LodingCompo from '../LodingCompo/LodingCompo';
 import './Login.css';
+import SocialLogin from './SocialLogin/SocialLogin';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -75,6 +76,7 @@ const Login = () => {
                 <br />
                 <p>Forget Password?<span className='text-warning' style={{cursor: 'pointer', fontWeight: 700}} onClick={sendEmailToResetPassword}> Reset Password</span></p>
             </form>
+            <SocialLogin></SocialLogin>
             <ToastContainer />
         </div>
     );

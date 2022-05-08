@@ -15,7 +15,7 @@ const Header = () => {
         <div>
             <Navbar sticky='top' style={{backgroundColor: 'black', color: 'white'}} variant='dark'  expand="lg">
   <Container fluid>
-    <Navbar.Brand href="#">Phone Zone</Navbar.Brand>
+    <Navbar.Brand as={Link} to='/home'>Phone Zone</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav

@@ -5,6 +5,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../firebase.init';
 import LodingCompo from '../LodingCompo/LodingCompo';
+import SocialLogin from '../Login/SocialLogin/SocialLogin';
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -65,7 +66,7 @@ const Register = () => {
                 <p>Already have an account?<span style={{cursor: 'pointer', fontWeight: 700}} className='text-warning text-decoration-none' onClick={navigateToLogin}> Login</span></p>
                 <input type="submit" value="Register" />
             </form>
-            <br />
+            <SocialLogin></SocialLogin>
             <ToastContainer></ToastContainer>
         </div>
     );
