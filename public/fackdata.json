@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name":"Samsung Galaxy M53",
+        "description":"Samsung Galaxy M53 5G was launched in April 2022 & runs on Android 12 OS. The Smartphone is available in two color options i.e. Green, Blue & has a built in fingerprint sensor as the primary security feature, along with the host of connectivity options in terms of 3G, 4G, GPS, Wifi, NFC Bluetooth capabilities. Priced at Rs. 26499 the phone is available with 128 GB of internal storage.The Smartphone is powered by 2x2.4, 6x2.0 Octa core MediaTek MT6877 Dimensity 900 5G Processor. A 6 GB of RAM ensures phone runs smoothly even the most memory intensive applications & still shows no signs of lag. 128 GB of internal storage can not be expanded further.The Phone comes with a powerful 5000 mAh battery to support it's 6.7 inch screen with Super AMOLED display having a resolution of 1080 x 2408 at 394 ppi.Samsung Galaxy M53 5G boasts of dual primary camera of 108 + 8 + 2 + 2 megapixel and 32 megapixel front Camera. The Smartphone has a low camera aperture of f/1.9. It also supports Face Detection and high dynamic range(HDR) imaging.",
+        "price":"299",
+        "img":"https://i.ibb.co/xmgqq6K/anh-nhat-YKFBd-V-RRXI-unsplash.jpg",
+        "quantity":"10",
+        "supplier":"Smart Elec."
+    },
+    {
+        "id": 2,
+        "name":"Samsung Galaxy A73 5G",
+        "description":"Samsung is adding a new smartphone model to its Galaxy A-series in the form of the Samsung Galaxy A73 5G. This latest offering by Samsung comes with exciting features under the hood and it sports a 108MP quad-camera setup. The Galaxy A73 5G has a 6.7-inch AMOLED display. The display panel offers Full HD+ resolution, 20:9 aspect ratio, and a pixel density of 393 PPI. The smartphone comes with 6GB of RAM and packs 128GB of internal storage. You can also expand the storage up to 1TB via microSD card support. The device is powered by Snapdragon 750G SoC which is aided with Adreno 619 GPU. For the optics purpose, Samsung has implemented in a 108MP quad-camera setup for the A73 5G. The rear camera module also includes an 8MP telephoto camera, 12MP ultra-wide-angle lens, and a 5MP depth sensor. On the front side, the smartphone sports a 32MP selfie camera. A 5000mAh battery is loaded with the A73 5G that has 33W fast charging support. The smartphone offers connectivity options like dual-SIM support, 4G VoLTE, 5G, Wi-Fi, Bluetooth, a 3.5mm audio jack, and a USB Type-C port. The other popular mobiles in the A-series includes Samsung Galaxy A52 and the Galaxy A72.",
+        "price":"399",
+        "img":"https://i.ibb.co/q0Y2Mvr/anh-nhat-Pd-ALQmf-Eqv-E-unsplash.jpg",
+        "quantity":"13",
+        "supplier":"Samsung Bangladesh"
+    },
+    {
+        "id": 3,
+        "name":"Samsung Galaxy A13",
+        "description":"Samsung Galaxy A13 5G is officially released on Dec. 3, 2021.The smartphone is packed with 4 GB RAM with 64 GB internal storage. The device runs on the Android 11, One UI operating system. It features GPS, USB, and FM radio. It is fueled with a Li-Po 5000, non-removable + Fast charging 15W.Samsung Galaxy A13 5G features a 6.5 inches PLS TFT display that has a 720 x 1600 pixels resolution. The device comes in a single color: Black. The smartphone is built with a Glass front, plastic back, and plastic frame.The device is integrated with a Single SIM (Nano-SIM) or Dual SIM (Nano-SIM, dual stand-by). It features triple camera: 50 MP (wide) + 2 MP (macro) + 2 MP (depth) while on the front there is a 5 MP (wide) camera.The device is powered by MediaTek MT6833 Dimensity 700 5G Octa-core processor. The sensors include Fingerprint (side-mounted), accelerometer, gyro, compass, barometer, Virtual proximity sensing.For the latest phones and tablets, check out giztop.com and get the best deals, coupons, offers, comparisons, reviews, and more!",
+        "price":"490",
+        "img":"https://i.ibb.co/pyrsKCV/thai-nguyen-t-T6-Wk-ROz-Sw-unsplash.jpg",
+        "quantity":"9",
+        "supplier":"Samsung Bangladesh"
+    },
+    {
+        "id": 4,
+        "name":"Iphone 13 pro Max",
+        "description":"Apple iPhone 13 Pro Max is officially announced on Sept. 14, 2021.The phone which is powered by the new Apple A15 Bionic processor comes with a 6.7 inch Super Retina XDR OLED capacitive touchscreen and 2778 x 1284 pixels resolution.It features True Tone and a Wide color gamut. The display screen is protected by a Scratch-resistant ceramic glass, oleophobic coating, and features 120Hz, HDR10, Dolby Vision, 1000 nits (typ), and 1200 nits (peak).It comes with a 6 GB RAM and four storage variants 128 GB, 256 GB, 512 GB, and 1 TB. The rear camera consists of a 12MP (wide) + 12MP (telephoto) 5x optical zoom + 12MP (ultrawide) sensors and TOF 3D LiDAR scanner (depth).The front camera has a 12 MP (wide) + SL 3D (depth/biometrics) camera sensor. Other sensors include Face ID, accelerometer, gyro, proximity, compass, barometer + Siri natural language commands, and dictation + Ultra-Wideband (UWB) support.Apple iPhone 13 Pro Max comes in Graphite, Gold, Silver, Sierra Blue. The dimension of the smartphone is 160.8 x 78.1 x 7.7 mm and it weighs 240 grams.For the latest phones and tablets, check out giztop.com and get the best deals, coupons, offers, comparisons, reviews, and more!",
+        "price":"1199",
+        "img":"https://i.ibb.co/hHGN1f1/bagus-hernawan-A6-Jx-K37-Il-Po-unsplash.jpg",
+        "quantity":"7",
+        "supplier":"Apple store"
+    },
+    {
+        "id": 5,
+        "name":"Iphone 12",
+        "description":"Apple iPhone 12 was officially released on October 13, 2020.The phone is powered by the new Apple A14 Bionic processor. The smartphone comes with a 6.1 inches Super Retina XDR OLED capacitive touchscreen, 1170 x 2532 pixels resolution and HDR10 display, Wide color gamut, Dolby Vision, and True-tone.Additionally, the screen of the device is protected by Scratch-resistant glass and oleophobic coating. The rear camera consists of 12 MP (wide) + 12 MP (ultrawide) with Quad-LED dual-tone flash, and HDR (photo/panorama).The front camera consists of 12 MP (wide) + SL 3D, (depth/biometrics sensor) with HDR. The phone’s sensors include Face ID, accelerometer, gyro, proximity, compass, barometer + Siri natural language commands, and dictation.The smartphone is fueled by a non-removable Li-Ion battery + Fast charging 18W, 50% in 30 min (advertised) + USB Power Delivery 2.0 + Qi fast wireless charging 15W. The phone runs on the iOS 14 operating system.The Apple iPhone 12 comes in different colors like Black, White, Red, Green, and Blue. The dimension of the smartphone is 146.7 x 71.5 x 7.4 mm and it weighs 164 grams. It is IP68 dust/water resistant and supports Single SIM (Nano-SIM and/or eSIM).",
+        "price":"999",
+        "img":"https://i.ibb.co/fdrQ8wq/vojtech-bruzek-J82-Gxqnw-KSs-unsplash.jpg",
+        "quantity":"11",
+        "supplier":"Apple Store"
+    },
+    {
+        "id": 6,
+        "name":"OnePlus 9",
+        "description":"OnePlus 9 is officially announced on March 23, 2021.The smartphone is powered by Qualcomm SM8350 Snapdragon 888 Octa-core and it comes with 6.55 inches Fluid AMOLED screen. The resolution of the screen is 1080 x 2400 pixels while it is protected by Corning Gorilla Glass.The sensor includes Fingerprint (under display, optical), accelerometer, gyro, proximity, and compass, color spectrum. The device is pack with 8 GB and 12 GB RAM while the internal storage is 128 GB and 512 GB.It is pack with 48 MP (wide) + 50 MP (ultrawide) + 2 MP (depth) with Hasselblad Color Calibration, dual-LED flash, HDR, and panorama. On the front, there is a 16 MP (wide).OnePlus 9 is fueled with a Non-removable Li-Po 4500 mAh battery + Fast charging 65W, 1-100% in 29 min (advertised) + Fast wireless charging 15W (EU/NA only) + USB Power Delivery.It comes in Winter Mist, Arctic Sky, and Astral Black colors. The dimension is 160 x 74.2 x 8.7 mm and it weighs 192 grams. For the latest phones and tablets, check out giztop.com and get the best deals, coupons, offers, comparisons, reviews, and more!",
+        "price":"699",
+        "img":"https://i.ibb.co/N6ZLCXx/amar-syazwan-rosman-s-Nd-BU8si-Kn0-unsplash.jpg",
+        "quantity":"14",
+        "supplier":"TachHope"
+    }
+]
