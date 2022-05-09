@@ -20,7 +20,7 @@ const AddItem = () => {
                 <input type="number" name='quantity' placeholder='Quantity' required />
                 <br />
                 <br />
-                <input type="submit" value="Add Item" />
+                <input type="submit" value="Add Item" className='mb-4'/>
             </form>
         </div>
     );

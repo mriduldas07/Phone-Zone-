@@ -41,7 +41,7 @@ const Header = () => {
       </Form>
     </Navbar.Collapse>
     {
-      user && <Nav.Link as={Link} to={`/login`} style={{color: 'white'}} >Manage Items</Nav.Link>
+      user && <Nav.Link as={Link} to={`/manageitems`} style={{color: 'white'}} >Manage Items</Nav.Link>
     }
     {
       user && <Nav.Link as={Link} to={`/additem`} style={{color: 'white'}} >Add Item</Nav.Link>
