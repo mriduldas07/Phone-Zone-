@@ -1,0 +1,27 @@
+.footer{
+    height: 65vh;
+    background-color: #696969;
+}
+.footer h4{
+    background-color: rgb(39, 39, 39);
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col1{
+    margin-left: 3rem;
+    padding: 5rem;
+}
+.col1 h2{
+    margin-bottom: 2rem;
+}
+.col1 input{
+    background: black;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 10px;
+}
+.middle-row{
+    margin-right: 1.5rem;
+}

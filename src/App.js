@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import AddItem from "./components/AddItem/AddItem";
 import Blogs from "./components/Blogs/Blogs";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Home/Header/Header";
 import Home from "./components/Home/Home";
 import InventoryItems from "./components/Home/InventoryItems/InventoryItems";
@@ -26,6 +27,7 @@ function App() {
           </RequireAuth>
         }></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
