@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
+import AddItemsBtn from '../AddItemsBtn/AddItemsBtn';
 import ItemDetails from '../Home/ItemDetails/ItemDetails';
 
 const ManageItems = () => {
@@ -11,7 +12,8 @@ const ManageItems = () => {
         .then(data => setItems(data))
     },[])
     return (
-        <div className='mt-5 g-5'>
+        <>
+                <div className='mt-5 g-5'>
             <h2 id='items' className='text-center text-success'>All Items</h2>
             <Container>
                 <Row>
@@ -24,6 +26,8 @@ const ManageItems = () => {
                 </Row>
             </Container>
         </div>
+        <AddItemsBtn></AddItemsBtn>
+        </>
     );
 };
 
