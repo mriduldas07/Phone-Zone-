@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Home/Header/Header";
 import Home from "./components/Home/Home";
 import InventoryItems from "./components/Home/InventoryItems/InventoryItems";
+import InventoryIdItem from "./components/InventoryIdItem/InventoryIdItem";
 import Login from "./components/Login/Login";
 import ManageItems from "./components/ManageItems/ManageItems";
 import MyItem from "./components/MyItem/MyItem";
@@ -23,6 +24,11 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+        <Route path="/inventory/:id" element={
+          <RequireAuth>
+            <InventoryIdItem></InventoryIdItem>
+          </RequireAuth>
+        }></Route>
         <Route path="/additem" element={
           <RequireAuth>
             <AddItem></AddItem>
