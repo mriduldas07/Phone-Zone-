@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import AddItemsBtn from '../AddItemsBtn/AddItemsBtn';
-import ItemDetails from '../Home/ItemDetails/ItemDetails';
+import InventoryDetailsForMange from '../InventoryDetailsForManage/InventoryDetailsForMange';
 
 const ManageItems = () => {
     const [items, setItems] = useState([]);
@@ -18,10 +18,10 @@ const ManageItems = () => {
             <Container>
                 <Row>
                     {
-                        items.map(item => <ItemDetails
+                        items.map(item => <InventoryDetailsForMange
                         key={item._id}
                         item = {item}
-                        ></ItemDetails>)
+                        ></InventoryDetailsForMange>)
                     }
                 </Row>
             </Container>

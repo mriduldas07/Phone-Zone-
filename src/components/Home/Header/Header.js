@@ -47,7 +47,7 @@ const Header = () => {
       user && <Nav.Link as={Link} to={`/additem`} style={{color: 'white'}} >Add Item</Nav.Link>
     }
     {
-      user && <Nav.Link as={Link} to={`/login`} style={{color: 'white'}} >My items</Nav.Link>
+      user && <Nav.Link as={Link} to={`/myitems`} style={{color: 'white'}} >My items</Nav.Link>
     }
     {
       user?
