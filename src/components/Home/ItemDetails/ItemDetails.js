@@ -18,7 +18,7 @@ const ItemDetails = ({item}) => {
                             <p>Price: $ {price}</p>
                             <p>Supplier Name: {supplier}</p>
                             <p>Quantity: {quantity}</p>
-                            <p>{description.slice(0,100) + '....'}</p>
+                            <p>{description?.slice(0,100) + '....'}</p>
                         </Card.Text>
                         <Button onClick={() => navigateToInventoryDetail(_id)} variant="warning" className='w-100 '>Stock Update</Button>
                 </Card.Body>

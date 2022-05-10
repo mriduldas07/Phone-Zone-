@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 
 const InventoryIdItem = () => {
     const {id} = useParams();
@@ -19,6 +20,9 @@ const InventoryIdItem = () => {
     const handleUpdateForm = e =>{
         e.preventDefault();
         let inputedQuantity = parseInt(e.target.quantity.value);
+        if (inputedQuantity < 0) {
+            toast("Please Input a positive Number")
+        }
             quantity = parseInt(quantity) + inputedQuantity;
 
             const updatedPhoneQuantity = { quantity };
@@ -53,7 +57,12 @@ const InventoryIdItem = () => {
         })
         .then(res => res.json())
         .then(data => {
-            setIsReload(!isReload);
+            if (quantity >= 0) {
+                const proceed = window.confirm("Delivered a phone??");
+                    if (proceed) {
+                setIsReload(!isReload);
+                }
+            }
         })
     }
     return (
@@ -79,6 +88,7 @@ const InventoryIdItem = () => {
             <br />
             <input type="submit" value="Update Quantity" />
         </form>
+        <ToastContainer></ToastContainer>
         </>
     );
 };
