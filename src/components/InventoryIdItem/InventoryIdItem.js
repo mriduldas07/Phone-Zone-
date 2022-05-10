@@ -21,8 +21,10 @@ const InventoryIdItem = () => {
         e.preventDefault();
         let inputedQuantity = parseInt(e.target.quantity.value);
         if (inputedQuantity < 0) {
-            toast("Please Input a positive Number")
+            toast("Please Input a positive Number");
+            return;
         }
+        if (inputedQuantity > 0) {
             quantity = parseInt(quantity) + inputedQuantity;
 
             const updatedPhoneQuantity = { quantity };
@@ -40,6 +42,8 @@ const InventoryIdItem = () => {
                 e.target.reset();
                 setIsReload(!isReload)
             });
+        }
+            
     };
 
     //  set delivered button to decrease one by one

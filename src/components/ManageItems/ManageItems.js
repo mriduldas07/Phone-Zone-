@@ -10,7 +10,7 @@ const ManageItems = () => {
         fetch("http://localhost:5000/phones")
         .then(res => res.json())
         .then(data => setItems(data))
-    },[])
+    },[items]);
     return (
         <>
                 <div className='mt-5 g-5'>
