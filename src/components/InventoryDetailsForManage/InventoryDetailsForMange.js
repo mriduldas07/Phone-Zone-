@@ -42,12 +42,7 @@ const InventoryDetailsForMange = ({item}) => {
                                 :
                                 <span className='text-danger' style={{backgroundColor: 'black', padding: '2px 5px', borderRadius:'5px'}}>Sold Out </span>
                             }
-                            {
-                                quantity < 0 ?
-                                <span className='text-danger' style={{backgroundColor: 'black', padding: '2px 5px', borderRadius:'5px'}}>Sold Out </span>
-                                :
-                                ""
-                            }
+                            
                         </Card.Text>
                         <Button onClick={() => handleDelete(_id)} variant="danger" className='w-100 '>Delete Stock</Button>
                 </Card.Body>

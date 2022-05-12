@@ -49,7 +49,7 @@ const InventoryIdItem = () => {
     //  set delivered button to decrease one by one
     const handleDeliveredBtn = () =>{
         const quantity = parseInt(phone.quantity) - 1;
-        if (quantity > 0) {
+        if (quantity >= 0) {
             const updatedPhoneQuantity = { quantity };
         //PUT data to server
         const url = `http://localhost:5000/phones/${id}`;
@@ -62,13 +62,11 @@ const InventoryIdItem = () => {
         })
         .then(res => res.json())
         .then(data => {
-            if (quantity >= 0) {
                 const proceed = window.confirm("Delivered a phone??");
                     if (proceed) {
                 setIsReload(!isReload);
                 }
                 return;
-            }
         })
         }
     }
