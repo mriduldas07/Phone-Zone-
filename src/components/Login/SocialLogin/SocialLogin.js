@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import LodingCompo from '../../LodingCompo/LodingCompo';
 import './SocialLogin.css'
@@ -13,11 +13,14 @@ const SocialLogin = () => {
             error
         ] = useSignInWithGoogle(auth);
 
+        const location = useLocation();
+        let from = location?.state?.from?.pathname || "/";
+
         if (loading) {
             return <LodingCompo></LodingCompo>
         }
         if (user) {
-            navigate('/home')
+            navigate(from, {replace: true});
         }
     return (
         <>

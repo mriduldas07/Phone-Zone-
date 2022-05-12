@@ -49,7 +49,8 @@ const InventoryIdItem = () => {
     //  set delivered button to decrease one by one
     const handleDeliveredBtn = () =>{
         const quantity = parseInt(phone.quantity) - 1;
-        const updatedPhoneQuantity = { quantity };
+        if (quantity > 0) {
+            const updatedPhoneQuantity = { quantity };
         //PUT data to server
         const url = `http://localhost:5000/phones/${id}`;
         fetch(url, {
@@ -66,8 +67,10 @@ const InventoryIdItem = () => {
                     if (proceed) {
                 setIsReload(!isReload);
                 }
+                return;
             }
         })
+        }
     }
     return (
         <>

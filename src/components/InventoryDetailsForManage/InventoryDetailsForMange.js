@@ -9,10 +9,9 @@ const InventoryDetailsForMange = ({item}) => {
         fetch("http://localhost:5000/phones")
         .then(res => res.json())
         .then(data => setItems(data))
-    },[items]);
+    },[]);
     // delete data
     const handleDelete = _id =>{
-        console.log(_id);
         const proceed = window.confirm("Are you sure to DELETE??");
         if (proceed) {
             const url = `http://localhost:5000/phones/${_id}`;
@@ -21,7 +20,6 @@ const InventoryDetailsForMange = ({item}) => {
             })
             .then(res => res.json())
             .then(data =>{
-                console.log(data);
                 const remaining = items.filter(itm => itm._id !== _id);
                 setItems(remaining);
             })
@@ -39,10 +37,16 @@ const InventoryDetailsForMange = ({item}) => {
                             <p>Quantity: {quantity}</p>
                             <p>{description?.slice(0,100) + '....'}</p>
                             {
-                                quantity?
+                                quantity ? 
+                                ''
+                                :
+                                <span className='text-danger' style={{backgroundColor: 'black', padding: '2px 5px', borderRadius:'5px'}}>Sold Out </span>
+                            }
+                            {
+                                quantity < 0 ?
+                                <span className='text-danger' style={{backgroundColor: 'black', padding: '2px 5px', borderRadius:'5px'}}>Sold Out </span>
+                                :
                                 ""
-                                : 
-                                <span className='text-danger' style={{backgroundColor: 'black', padding: '2px 5px', borderRadius: '5px'}}>Sold Out</span>
                             }
                         </Card.Text>
                         <Button onClick={() => handleDelete(_id)} variant="danger" className='w-100 '>Delete Stock</Button>
