@@ -9,14 +9,14 @@ const MyItem = () => {
     const [items, setItems] = useState([]);
 
     useEffect( () =>{
-        fetch("http://localhost:5000/phones")
+        fetch("https://fathomless-basin-88878.herokuapp.com/phones")
         .then(res => res.json())
         .then(data => setItems(data))
     },[]);
 
     useEffect( () =>{
         const email = user?.email;
-        const url = `http://localhost:5000/myitems?email=${email}`;
+        const url = `https://fathomless-basin-88878.herokuapp.com/myitems?email=${email}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setMyItem(data))
@@ -26,7 +26,7 @@ const MyItem = () => {
     const handleDelete = _id =>{
         const proceed = window.confirm("Are you sure to DELETE??");
         if (proceed) {
-            const url = `http://localhost:5000/phones/${_id}`;
+            const url = `https://fathomless-basin-88878.herokuapp.com/phones/${_id}`;
             fetch(url, {
                 method: 'DELETE'
             })

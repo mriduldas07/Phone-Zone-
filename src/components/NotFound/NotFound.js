@@ -11,7 +11,7 @@ const NotFound = () => {
                 <Card.Body>
                     <Card.Title> <h1> 404 - Page Not Found</h1></Card.Title>
                         <Card.Text>
-                        <img className='my-5' src={'https://i.ibb.co/ygJ6G96/eorror.png'} style={{}} alt="" />
+                        <img className='my-5' src={'https://i.ibb.co/ygJ6G96/eorror.png'} alt="" />
                         </Card.Text>
                         <Button  variant="success" onClick={() => navigate('/home')} >Back To Home</Button>
                 </Card.Body>

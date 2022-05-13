@@ -6,7 +6,7 @@ const InventoryDetailsForMange = ({item}) => {
     const [items, setItems] = useState([]);
 
     useEffect( () =>{
-        fetch("http://localhost:5000/phones")
+        fetch("https://fathomless-basin-88878.herokuapp.com/phones")
         .then(res => res.json())
         .then(data => setItems(data))
     },[]);
@@ -14,7 +14,7 @@ const InventoryDetailsForMange = ({item}) => {
     const handleDelete = _id =>{
         const proceed = window.confirm("Are you sure to DELETE??");
         if (proceed) {
-            const url = `http://localhost:5000/phones/${_id}`;
+            const url = `https://fathomless-basin-88878.herokuapp.com/phones/${_id}`;
             fetch(url, {
                 method: 'DELETE'
             })

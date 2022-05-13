@@ -17,7 +17,7 @@ const AddItem = () => {
             img: e.target.img.value,
             quantity: e.target.quantity.value
         };
-        const url = `http://localhost:5000/phones`;
+        const url = `https://fathomless-basin-88878.herokuapp.com/phones`;
         fetch(url, {
             method: 'POST',
             headers: {

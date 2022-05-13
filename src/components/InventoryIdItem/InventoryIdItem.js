@@ -9,7 +9,7 @@ const InventoryIdItem = () => {
     const [isReload, setIsReload] = useState(false);
 
     useEffect( () =>{
-        const url = `http://localhost:5000/phones/${id}`;
+        const url = `https://fathomless-basin-88878.herokuapp.com/phones/${id}`;
         fetch(url)
         .then(res =>res.json())
         .then(data => setPhone(data));
@@ -29,7 +29,7 @@ const InventoryIdItem = () => {
 
             const updatedPhoneQuantity = { quantity };
 
-            const url = `http://localhost:5000/phones/${id}`;
+            const url = `https://fathomless-basin-88878.herokuapp.com/phones/${id}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -52,7 +52,7 @@ const InventoryIdItem = () => {
         if (quantity >= 0) {
             const updatedPhoneQuantity = { quantity };
         //PUT data to server
-        const url = `http://localhost:5000/phones/${id}`;
+        const url = `https://fathomless-basin-88878.herokuapp.com/phones/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
