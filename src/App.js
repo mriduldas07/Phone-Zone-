@@ -4,7 +4,6 @@ import Blogs from "./components/Blogs/Blogs";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Home/Header/Header";
 import Home from "./components/Home/Home";
-import InventoryItems from "./components/Home/InventoryItems/InventoryItems";
 import InventoryIdItem from "./components/InventoryIdItem/InventoryIdItem";
 import Login from "./components/Login/Login";
 import ManageItems from "./components/ManageItems/ManageItems";
