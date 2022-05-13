@@ -8,6 +8,7 @@ import InventoryIdItem from "./components/InventoryIdItem/InventoryIdItem";
 import Login from "./components/Login/Login";
 import ManageItems from "./components/ManageItems/ManageItems";
 import MyItem from "./components/MyItem/MyItem";
+import NotFound from "./components/NotFound/NotFound";
 import Register from "./components/Register/Register";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
 
@@ -43,6 +44,7 @@ function App() {
           <MyItem></MyItem>
         </RequireAuth>
       }></Route>
+      <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
