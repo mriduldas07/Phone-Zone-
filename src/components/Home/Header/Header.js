@@ -26,8 +26,8 @@ const Header = () => {
         <Nav.Link as={Link} to={`/home`} >Home</Nav.Link>
         <Nav.Link as={Link} to={`home#items`} >Inventory</Nav.Link>
         <Nav.Link as={Link} to={`/blogs`} >Blogs</Nav.Link>
-        <Nav.Link href="#" disabled>
-          Link
+        <Nav.Link as={Link} to={`/about`}>
+          About
         </Nav.Link>
       </Nav>
       <Form className="d-flex">

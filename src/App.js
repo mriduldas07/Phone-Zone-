@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import About from "./components/About/About";
 import AddItem from "./components/AddItem/AddItem";
 import Blogs from "./components/Blogs/Blogs";
 import Footer from "./components/Footer/Footer";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
         <Route path="/inventory/:id" element={
           <RequireAuth>
             <InventoryIdItem></InventoryIdItem>
