@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap';
 const About = () => {
     return (
         <div className='container my-5'>
-            <h2 className="text-center py-2">About our wareHouse</h2>
+            <h2 className="text-center py-2">About our phone Zone</h2>
             <img className='img-fluid' src={"https://i.ibb.co/PhWRp8k/jacques-dillies-jcav1-COVv-Oc-unsplash.jpg"} alt="" />
             <p className='my-3'><strong>Description of our work,</strong>A mobile warehouse is a facility to store goods,which is not permanently static, or based in a building. It could a trailer loaded with ready-packed goods,or a barge on the Thames filled with seasonal or frequently purchased items.Of course, it will have originally been supplied from a separate, static warehouse.But these goods will make it to their new owners far more easily and quickly when serviced from a mobile facility.This is a phone based warehouse.We store mobile phone of any kind.Anyone can be user of our website and also our housing system.We displayed your adding product and you can also update data further,delete your adding data and match more thing.</p>
             <Row>

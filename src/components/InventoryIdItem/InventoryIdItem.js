@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
+import ManageLinkButton from '../../ManageLinkButton/ManageLinkButton';
 
 const InventoryIdItem = () => {
     const {id} = useParams();
@@ -93,6 +94,7 @@ const InventoryIdItem = () => {
             <br />
             <input type="submit" value="Update Quantity" />
         </form>
+        <ManageLinkButton></ManageLinkButton>
         <ToastContainer></ToastContainer>
         </>
     );

@@ -25,3 +25,10 @@
 .middle-row{
     margin-right: 1.5rem;
 }
+
+@media only screen and (max-width: 576px) {
+    .footer{
+        height: 130vh;
+        background-color: gray;
+    }
+}

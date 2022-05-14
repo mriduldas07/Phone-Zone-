@@ -48,7 +48,7 @@ const Register = () => {
             }
             await createUserWithEmailAndPassword(email, password);
             await updateProfile({email: email});
-            navigate('/login');
+            navigate('/home');
     }
     return (
         <div className='login-form w-25 mx-auto'>
