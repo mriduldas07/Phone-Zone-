@@ -10,7 +10,7 @@ const ManageItems = () => {
         fetch("https://fathomless-basin-88878.herokuapp.com/phones")
         .then(res => res.json())
         .then(data => setItems(data))
-    },[]);
+    },[items]);
     return (
         <>
                 <div className='mt-5 g-5'>

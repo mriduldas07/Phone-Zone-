@@ -20,7 +20,7 @@ const MyItem = () => {
         fetch(url)
         .then(res => res.json())
         .then(data => setMyItem(data))
-    },[]);
+    },[myItem]);
 
     // delete data
     const handleDelete = _id =>{

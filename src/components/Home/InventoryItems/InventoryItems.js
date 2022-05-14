@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import ItemDetails from '../ItemDetails/ItemDetails';
 import './InventoryItems.css'
 
